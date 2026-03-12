@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register - SB Rental</title>
+<title>Register - SBC Rental</title>
 <link rel="stylesheet" href="login.css">
 </head>
 
@@ -11,19 +11,20 @@
 
 <div class="login-container">
 
+ <!-- Logo -->
+<img src="images/logo.png" alt="SBC Rental Logo" class="logo">
+
+
 <h2>Create Account With SB Rental </h2>
+<p>Register to view our rentals</p>
 
 <form id="registerForm">
-
-<input type="text" id="username" name="username" placeholder="Enter Username" required>
-
-<input type="email" id="email" name="email" placeholder="Enter Email" required>
-
-<input type="password" id="password" name="password" placeholder="Create Password" required>
-
-<button type="submit">Register</button>
-
+    <input type="text" id="username" placeholder="Enter Username" required>
+    <input type="password" id="password" placeholder="Enter Password" required>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    <button type="submit">Register</button>
 </form>
+<p id="error"></p>
 
 <p>Already have an account? <a href="login.html">Login here</a></p>
 

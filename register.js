@@ -1,21 +1,28 @@
 document.getElementById("registerForm").addEventListener("submit", function(e){
+    e.preventDefault();
 
-e.preventDefault();
+    let username = document.getElementById("username").value.trim();
+    let password = document.getElementById("password").value.trim();
+    let confirmPassword = document.getElementById("confirmPassword").value.trim();
+    let error = document.getElementById("error");
 
-let username = document.getElementById("regUsername").value;
-let email = document.getElementById("regEmail").value;
-let password = document.getElementById("regPassword").value;
 
-let user = {
-username: username,
-email: email,
-password: password
-};
+    // Check if passwords match
+    if(password !== confirmPassword){
+        error.textContent = "Passwords do not match";
+        return;
+    }
 
-localStorage.setItem(username, JSON.stringify(user));
+    // Check if user already exists
+    if(localStorage.getItem(username)){
+        error.textContent = "Username already exists";
+        return;
+    }
 
-alert("Registration Successful");
+    // Save user to localStorage
+    let user = { password: password };
+    localStorage.setItem(username, JSON.stringify(user));
 
-window.location.href = "login.html";
-
+    alert("Registration successful! You can now login.");
+    window.location.href = "login.html";
 });

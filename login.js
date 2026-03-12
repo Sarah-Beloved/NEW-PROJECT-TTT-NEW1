@@ -8,8 +8,7 @@ let password = document.getElementById("password").value;
 /* ADMIN LOGIN */
 
 if(username === "admin" && password === "1234"){
-
-window.location.href = "admin.html";
+window.location.href = "products.html";
 return;
 
 }
@@ -19,23 +18,15 @@ return;
 let storedUser = localStorage.getItem(username);
 
 if(storedUser){
-
-let userData = JSON.parse(storedUser);
+    let userData = JSON.parse(storedUser);
 
 if(userData.password === password){
-
-window.location.href = "index.html";
-
+    window.location.href = "products.html";
 }else{
-
 document.getElementById("error").textContent = "Wrong Password";
-
 }
-
 }else{
-
 document.getElementById("error").textContent = "User does not exist";
-
 }
 
 });
