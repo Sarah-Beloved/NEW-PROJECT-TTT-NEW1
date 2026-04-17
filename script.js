@@ -116,6 +116,9 @@ function filterItems(category) {
     });
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 61d607ae22c8034f54adba9d430ee081b276130b
 
 //LOGIN PAGE//
 
@@ -160,6 +163,10 @@ form.addEventListener("submit", function (e) {
   } else {
     errorMsg.textContent = "Invalid username/email or password!";
   }
+<<<<<<< HEAD
 });
 =======
 >>>>>>> 7f7939e (UPDATE)
+=======
+});
+>>>>>>> 61d607ae22c8034f54adba9d430ee081b276130b
