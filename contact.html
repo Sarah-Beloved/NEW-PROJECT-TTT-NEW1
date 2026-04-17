@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB RENTAL COMPANY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEDER-->
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">WELCOME TO SBC</span> Multi Service Rental Company</h1>
+      </div>
+
+     <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+  ☰ MENU
+</button>
+    <!--NAVIGATION-->
+    <nav class="nav" id="nav-menu">
+ <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="services.html">SERVICES</a></li>
+    <li><a href="products.html">PRODUCTS</a></li>
+    <li><a href="blog.html">BLOG PAGE</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+   </ul>
+</nav>   
+  </div>
+</header>
+
+<section class="contact-container">
+
+<h2>Get In Touch With Us</h2>
+
+<div class="contact-box">
+
+<div class="contact-info">
+
+<h3>Contact Information</h3>
+
+<p><strong>Phone:</strong> +234 9039279468</p>
+<p><strong>Email:</strong> sarahbeloveds@gmail.com</p>
+<p><strong>Location:</strong> Lagos, Nigeria</p>
+
+<a href="https://wa.me/2349039279468" class="whatsapp-contact">
+Chat With Us on WhatsApp
+</a>
+
+</div>
+
+<div class="contact-form">
+
+<h3>Send Us a Message</h3>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea placeholder="Your Message" rows="5"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<p>Email: <a href="sarahbeloveds@gmail.com">sarahbeloveds@gmail.com</a></p>
+<p class="copyright">
+  © 2026 SBC Multi Service Rental Company. All rights reserved.
+</p>
+</footer>
+
+  <script>
+const toggleBtn = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+toggleBtn.addEventListener("click", function() {
+    navMenu.classList.toggle("active");
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>

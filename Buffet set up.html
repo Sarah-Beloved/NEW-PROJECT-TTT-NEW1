@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB RENTAL COMPANY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- HEDER-->
+<header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">WELCOME TO SBC</span> Multi Service Rental Company</h1>
+      </div>
+
+     <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+  ☰ MENU
+</button>
+    <!--NAVIGATION-->
+    <nav class="nav" id="nav-menu">
+ <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT US</a></li>
+    <li><a href="services.html">SERVICES</a></li>
+    <li><a href="products.html">PRODUCTS</a></li>
+    <li><a href="blog.html">BLOG PAGE</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+</nav>   
+    </div>
+  </div>
+</header>
+
+<div class="container">
+    <h1><span class="highlight">BUFFET SET UP</span></h1>
+    <p style="text-align:center;">Explore our collection of elegant man suit  </p>
+  </div>
+
+  <!-- FILTER -->
+   <div class="filter-buttons">
+      <button onclick="filterItems('all')">All</button>
+      <button onclick="filterItems('drum')">Drum</button>
+      <button onclick="filterItems('plate')">Plate and Spoon</button>
+      <button onclick="filterItems('buffet')">buffet Set</button>
+    </div>
+
+  <div class="wedding-grid">
+    <div class="dress-card all">
+    <img src="images/bur 1.jpg" onclick="openModal(this)">
+    <h4>buf </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('all')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 2.jpg" onclick="openModal(this)">
+    <h4>Plate </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 3.jpg" onclick="openModal(this)">
+    <h4>plates </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card buffet">
+    <img src="images/bur 4.jpg" onclick="openModal(this)">
+    <h4>Buffet and Plates </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card drum">
+    <img src="images/bur 5.jpg" onclick="openModal(this)">
+    <h4>Water Drum </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('drum')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card buffet">
+    <img src="images/bur 6.jpg" onclick="openModal(this)">
+    <h4>Buffet </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card buffet">
+    <img src="images/bur 7.jpg" onclick="openModal(this)">
+    <h4>Buffet </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 8.jpg" onclick="openModal(this)">
+    <h4>plates </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 9.jpg" onclick="openModal(this)">
+    <h4>plates </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 10.jpg" onclick="openModal(this)">
+    <h4>cups</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card buffet">
+    <img src="images/bur 11.jpg" onclick="openModal(this)">
+    <h4>Buffet set </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card all">
+    <img src="images/bur 12.jpg" onclick="openModal(this)">
+    <h4>Buffet </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('all')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 13.jpg" onclick="openModal(this)">
+    <h4>plate and spoon</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 14.jpg" onclick="openModal(this)">
+    <h4>cups and plate</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 15.jpg" onclick="openModal(this)">
+    <h4>plate abd spoon</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card buffet">
+    <img src="images/bur 16.jpg" onclick="openModal(this)">
+    <h4>Buffet set </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 17.jpg" onclick="openModal(this)">
+    <h4>plate abd spoon</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 18.jpg" onclick="openModal(this)">
+    <h4>plate abd spoon</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card buffet">
+    <img src="images/bur 19.jpg" onclick="openModal(this)">
+    <h4>Buffet set </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card plate">
+    <img src="images/bur 20.jpg" onclick="openModal(this)">
+    <h4>cups</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card drum">
+    <img src="images/bur 21.jpg" onclick="openModal(this)">
+    <h4>bucket for drinks</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('drum')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+       <div class="dress-card buffet">
+    <img src="images/bur 22.jpg" onclick="openModal(this)">
+    <h4>Buffet and plate set </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+
+      <div class="dress-card plate">
+    <img src="images/bur 23.jpg" onclick="openModal(this)">
+    <h4>cups</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('plate')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+       <div class="dress-card drum">
+    <img src="images/bur 24.jpg" onclick="openModal(this)">
+    <h4>bucket for drinks</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('drum')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+        <div class="dress-card buffet">
+    <img src="images/bur 25.jpg" onclick="openModal(this)">
+    <h4>Buffet set </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+        <div class="dress-card buffet">
+    <img src="images/bur 26.jpg" onclick="openModal(this)">
+    <h4>drink bolw </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('buffet')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+        <div class="dress-card all">
+    <img src="images/bur 27.jpg" onclick="openModal(this)">
+    <h4>Pot </h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('all')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+      <div class="dress-card drum">
+    <img src="images/bur 28.jpg" onclick="openModal(this)">
+    <h4>Water drum</h4>
+    <P>₦15,000</P>
+     <button onclick="addToCart('drum')">Add to Cart</button>
+
+      <a class="whatsapp-btn"
+         href="https://wa.me/2349039279468?text=I want to rent the Classic White Formal Suit"
+         target="_blank">
+         Rent via WhatsApp
+      </a>
+      </div>
+
+  </div>
+    </div>
+
+<div style="text-align:center; margin: 40px 0;">
+  <a href="products.html" class="back-btn">← Return to Products</a>
+</div>
+
+<footer>
+  <p class="copyright">
+    © 2026 SBC Multi Service Rental Company
+  </p>
+</footer>
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
