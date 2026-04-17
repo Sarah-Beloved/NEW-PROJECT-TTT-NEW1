@@ -1,0 +1,116 @@
+/* Reset & Body */
+body {
+    font-family: poppins;
+    background: #e9e7e7;
+    margin: 0;
+    padding: 0;
+}
+svg {
+width: 30px;
+}
+
+a {
+    text-decoration: none;
+    color:#070707;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart span {
+    background-color:red;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+/* carttab*/
+.cartTab {
+    background-color: #353432;
+    color: #eee;
+    width: 400px;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    transition: 0.5s;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.cartTab .btn button{
+    background-color: #e8bc0e;
+    border: none;
+    font-family: poppins;
+    font-weight: 500;
+    padding: 20PX;
+    cursor: pointer;
+}
+
+.cartTab .btn button.close {
+    background-color: #eee;
+}
+.cartTab .listCart {
+    overflow: auto;
+
+}    
+    .cartTab .listcart::-webkit-scrollbar {
+        width: 0;
+    }
+    
+.cartTab {
+    right : -400px;
+    transition: 0.5s;
+}
+body.activeTabCart .cartTab {
+    right:0;
+}
+
+body.activeTabCart .container {
+    transform: translateX(-250px);
+}
